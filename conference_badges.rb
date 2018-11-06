@@ -10,3 +10,12 @@ def batch_badge_creator(array)
   end 
   badges 
 end 
+def assign_rooms(array)
+  counter = 1 
+  room_assignments = []
+  array.each do | luminary |
+    room_assignments.push("Hello, #{luminary}! You'll be assigned to room #{counter}!")
+    counter += 1 
+  end 
+  room_assignments
+end 
